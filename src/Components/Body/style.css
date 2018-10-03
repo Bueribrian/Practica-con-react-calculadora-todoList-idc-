@@ -1,0 +1,19 @@
+.body{
+  margin-top: 2rem;
+  padding: 1rem;
+  box-sizing: border-box;
+  animation: wakeUp 1s;
+}
+@keyframes wakeUp {
+  0%{
+    transform: translateX(-50%);
+    opacity: 0;
+  }
+}
+.title-body{
+  font-size: 2.5rem;
+  color:#845ec2;
+}
+.p-body{
+  font-size: 1.2rem;
+}

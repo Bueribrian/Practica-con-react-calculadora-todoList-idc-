@@ -1,0 +1,106 @@
+
+.calculadora{
+  width: 40%;
+  margin:5rem auto;
+  min-height: 400px;
+  background: #3d3d3d;
+  padding: 1rem;
+  display: flex;
+  flex-wrap: wrap;
+  animation: wakeUp 1s;
+
+}
+.calculadora > div {
+  background: #666666;
+
+}
+.input{
+
+  width: 100%;
+  height: 80px;
+  line-height: 80px;
+  text-align: right;
+  padding-right: 2em;
+  font-size: 2em;
+  background: black;
+}
+
+.numbers{
+  width: 60%;
+  height: auto;
+
+}
+.operators{
+  width: 40%;
+  height: auto;
+
+}
+.numBtn{
+  width: 30%;
+  padding: 1rem;
+  font-size: 1.2rem;
+  background: #a1a1a1;
+  color: black;
+  border:none;
+  margin:0.2em;
+  border-radius: 5px;
+  float: left;
+  cursor: pointer;
+  box-shadow: 1px 1px 3px black;
+}
+.numBtn:active{
+  box-shadow: inset 1px 1px 3px rgba(0,0,0,0.8) ;
+}
+.opeBtn{
+  width: 45%;
+  margin:0.2em;
+  padding: 1rem;
+  font-size: 1.2rem;
+  background: yellow;
+  color: black;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  box-shadow: 1px 1px 3px black;
+}
+.opeBtn:active{
+  box-shadow: inset 1px 1px 3px rgba(0,0,0,0.8) ;
+}
+.Equal{
+  width: 97%;
+  margin:0.2em;
+  background: orange;
+  border: none;
+  border-radius: 5px;
+  padding: 3rem;
+  font-size: 1.2rem;
+  cursor: pointer;
+  box-shadow: 1px 1px 3px black;
+}
+.Equal:active{
+  box-shadow: inset 1px 1px 3px rgba(0,0,0,0.8) ;
+}
+.Keyboard{
+  width: 100%;
+  margin: 0;
+  padding: 1em 0.2em;
+  display: flex;
+  border-radius: 5px;
+  box-shadow: 3px 3px 3px rgba(0,0,0,0.3);
+
+}
+@media (max-width:920px) {
+  .calculadora{
+    width: 60%;
+  }
+}
+@media (max-width:480px) {
+  .calculadora{
+    width: 90%;
+  }
+}
+@media (max-width:320px) {
+  .calculadora{
+    width: 100%;
+  }
+}
