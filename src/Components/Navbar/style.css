@@ -24,15 +24,17 @@ li::after{
   width: 0%;
   height: 2px;
   background: white;
+  transition: 0.3s all;
 }
 li{
   position: relative;
 }
 li:hover::after{
   width: 100%;
+  background: #534499;
   transition: 0.3s all;
 }
-.selected{
+.visited{
   font-size: 1.5rem;
   color: #845ec2;
 }

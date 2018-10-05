@@ -1,4 +1,5 @@
 
+
 .calculadora{
   width: 40%;
   margin:5rem auto;
@@ -8,11 +9,16 @@
   display: flex;
   flex-wrap: wrap;
   animation: wakeUp 1s;
+  box-sizing: border-box;
 
 }
 .calculadora > div {
   background: #666666;
 
+}
+button:active {
+  border-color: gold;
+  box-sizing: border-box;
 }
 .input{
 
@@ -79,6 +85,17 @@
 }
 .Equal:active{
   box-shadow: inset 1px 1px 3px rgba(0,0,0,0.8) ;
+}
+.delBtn{
+  margin-bottom: -5px;
+  margin-right: 3px;
+  cursor: pointer;
+  border: none;
+  border-top-right-radius: 10px;
+  border-top-left-radius: 10px;
+  padding: 0.5rem 1rem;
+  background: black;
+  color: white;
 }
 .Keyboard{
   width: 100%;

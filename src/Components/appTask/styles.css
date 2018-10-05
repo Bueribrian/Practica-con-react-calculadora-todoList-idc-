@@ -1,0 +1,69 @@
+.taskForm{
+    width: 40%;
+    display: inline-block;
+    box-sizing: border-box;
+}
+.taskForm input{
+    width: 70%;
+    margin: 10px 15%;
+}
+#taskDesc{
+    width: 70%;
+    height: 100px;
+    margin: 10px 15%;
+}
+.taskForm button{
+    width: 60%;
+    margin: 10px 20%;
+}
+.containerTaskList{
+    width: 60%;
+    display: inline-block;
+    padding: 1em;
+    box-sizing: border-box;
+}
+.taskList{
+    background: rgba(4,33,179,1);
+background: -moz-linear-gradient(left, rgba(4,33,179,1) 0%, rgba(146,1,229,1) 98%, rgba(149,0,230,1) 100%);
+background: -webkit-gradient(left top, right top, color-stop(0%, rgba(4,33,179,1)), color-stop(98%, rgba(146,1,229,1)), color-stop(100%, rgba(149,0,230,1)));
+background: -webkit-linear-gradient(left, rgba(4,33,179,1) 0%, rgba(146,1,229,1) 98%, rgba(149,0,230,1) 100%);
+background: -o-linear-gradient(left, rgba(4,33,179,1) 0%, rgba(146,1,229,1) 98%, rgba(149,0,230,1) 100%);
+background: -ms-linear-gradient(left, rgba(4,33,179,1) 0%, rgba(146,1,229,1) 98%, rgba(149,0,230,1) 100%);
+background: linear-gradient(to right, rgba(4,33,179,1) 0%, rgba(146,1,229,1) 98%, rgba(149,0,230,1) 100%);
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#0421b3', endColorstr='#9500e6', GradientType=1 );
+    padding: 1em;
+    margin: 1em 0px; 
+    color:white;
+    position: relative;
+}
+.removeTask{
+    position: absolute;
+    top: 5px;
+    right: 10px;
+    font-size:1.5em;
+    cursor:pointer;
+    transition: .5s all;
+}
+.removeTask:hover{
+    color: black;
+    transition: .5s all;
+}
+
+.taskAnimation{
+    animation: taskAni 1s;
+}
+@keyframes taskAni{
+    0%{
+        opacity: 0;
+        transform: translateX(0%)
+    }
+    60%{
+        transform: translateX(30%)
+    }
+    70%{
+        transform: translateX(-20%)
+    }
+    80%{
+        transform: translateX(10%)
+    }
+}

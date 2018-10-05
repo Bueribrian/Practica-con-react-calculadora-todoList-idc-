@@ -2,11 +2,11 @@
   margin-top: 2rem;
   padding: 1rem;
   box-sizing: border-box;
-  animation: wakeUp 1s;
+  animation: wakeUp 1.5s;
 }
 @keyframes wakeUp {
   0%{
-    transform: translateX(-50%);
+    transform: translateX(-10%);
     opacity: 0;
   }
 }
